@@ -1,0 +1,16 @@
+=== A2.1 repeated-whitespace experiment ===
+eng line 7: split(' ')=8, split()=7, line-level fertility multiplier if fixed token count=0.875000; understatement=12.50%
+hin line 10: split(' ')=6, split()=5, line-level fertility multiplier if fixed token count=0.833333; understatement=16.67%
+
+=== A2.2 aggregation experiment ===
+per-line ratios=[1.5, 100.0]
+mean(per-line fertility)=50.750000
+corpus totals tokens/words=34.333333
+absolute difference=16.416667
+relative difference vs corpus ratio=47.82%
+
+=== A2.3 harmless random.seed experiment ===
+random-related lines:
+import random
+random.seed(1337)  # reproducibility
+No random draw is present in the script; the seed is therefore numerically inert.
